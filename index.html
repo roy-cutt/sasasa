@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="Spanish">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cifrado Cesar</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <font face="Comic Sans MS">
+    <div class="div_contenedor">
+        <div class="div_centrado">
+            <strong><h1 align = "center">CIFRADO CESAR</h1></strong>
+                <div align = "center">
+                    <h5 align ="center"> Texto a cifrar</h5>
+                    <input type="text" id="cadena" name="txtC">
+                    <h5 align ="center">Semilla</h5>
+                    <input type="number" name="lugar" id="lugar" value="0" placeholder="Positivos solamente UwU" onpaste ="return false" align="center";
+                    ondrop = "return false;" min="0" align="center">                    
+                </div>
+                <p>
+
+                </p>
+                <div align="center">
+                    <input class="btn btn-info" type="button" value="Cifrar" onclick="codificar()" name="btn">
+                    <input class="btn btn-info" type="button" value="Descifrar" onclick="decodificar()" name="btn">
+                </div>
+
+                <div align ="center">
+                    <h5 align="center">Texto Encriptado</h5>
+                <div class="resultado" id="resultado">
+                    <input id="r" onpaste ="return false;" ondrop="return false;" name="txtD">
+                    <h2 align=center>
+                        <input class="btn btn-info" type="button" value="Reiniciar" onclick="reinicio()" name="btn"> 
+                    </h2>
+                </div>
+                </div>
+
+                
+        </div>
+        <div class="image">
+            <img src="css/pi.png" >
+            </div>
+
+    </div>
+
+     <script src="js/logica.js"></script>
+</body>
+
+</html>
